@@ -29,7 +29,7 @@ public class RecordController {
 
     }
 
-    @GetMapping("/get")
+    @GetMapping("/getRecord")
     public Optional<Record> get(@RequestParam String languageKey, @RequestParam String text) {
         return recordService.getRecord(languageKey, text);
     }
